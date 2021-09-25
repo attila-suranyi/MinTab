@@ -1,14 +1,11 @@
 const printQuote = () => {
-  let api = `https://api.quotable.io/random`;
-
-  fetch(api)
-    .then(function (response) {
-      let data = response.json();
-      return data;
-    })
+  fetch("output.json")
+    .then(data => data.json())
     .then(function (data) {
-	  quote.innerHTML = `"${ data.content }"`;
-	  if (data.author != null) quoteAuthor.innerHTML = `- ${ data.author }`;
+      const randIndex = Math.floor(Math.random() * data.length);
+      const randQuote = data[randIndex];
+	    quote.innerHTML = `"${ randQuote.Content }"`;
+	    quoteAuthor.innerHTML = `- ${ randQuote.Title }`;
 	});  
 };
 
