@@ -8,7 +8,7 @@ const ICONS = [
     link: "https://www.youtube.com/"
   },
   {
-    icon: "fa-hacker-news",
+    icon: "fa:hacker-news",
     link: "https://news.ycombinator.com/"
   },
   {
