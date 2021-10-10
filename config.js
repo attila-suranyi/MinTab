@@ -8,12 +8,8 @@ const ICONS = [
     link: "https://www.youtube.com/"
   },
   {
-    icon: "fa:hacker-news",
-    link: "https://news.ycombinator.com/"
-  },
-  {
-    icon: "ri-reddit-fill",
-    link: "https://www.reddit.com/"
+    icon: "ri-spotify-fill",
+    link: "https://open.spotify.com/"
   },
   {
     icon: "ri-github-fill",
